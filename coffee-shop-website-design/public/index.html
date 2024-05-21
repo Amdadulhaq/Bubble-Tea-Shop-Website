@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Tea</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="header">
+    <div id="menu-icon" class="fas fa-bars"></div>
+    <a href="./index.html" class="logo">Pearl Tea<i class="fas fa-coffee"></i></a>
+    <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./menu.html">Menu</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./login.html">Login/SignUp</a>
+    </nav>
+    <a href="./cart.html" class="btn" id="cart">Cart</a>
+</header>
+<section class="home" id="home">
+    <div class="row">
+        <div class="content">
+            <h3>Freshly Brewed Coffee</h3>
+            <a href="./menu.html" class="btn">Order Now</a>
+        </div>
+        <div class="image">
+            <img src="./Image/home-img-1.png" class="main-home-image" alt="">
+        </div>
+    </div>
+    <div class="image-slider">
+        <img src="/image/home-img-1.png" alt="">
+        <img src="./Image/home-img-2.png" alt="">
+        <img src="./Image/home-img-3.png" alt="move">
+    </div>
+</section>
+<section class="about" id="about">
+   
+    <div class="row">
+        <div class="image">
+            <img src="./Image/about.png" alt="">
+        </div>
+        <div class="content">
+            <h3 class="title">What Makes Our Boba Tea Special</h3>
+            <p>Our boba tea is crafted with the finest ingredients, ensuring each sip is a perfect blend of flavors and textures. From our premium tea leaves to our freshly made tapioca pearls, every element is chosen for its quality and taste.
+            <br>Whether you prefer classic flavors or adventurous new blends, our menu has something for everyone. Enjoy a refreshing and delightful experience with every cup of our special boba tea.</p>
+            <a href="./about.html" class="btn">Learn More</a>
+            <div class="icons-container">
+                <div class="icons">
+                    <img src="./image/about-icon-1.png" alt="">
+                    <h3>Quality Topping</h3>
+                </div>
+                <div class="icons">
+                    <img src="./image/about-icon-2.png" alt="">
+                    <h3>Cozy Place</h3>
+                </div>
+                <div class="icons">
+                    <img src="./image/about-icon-3.png" alt="">
+                    <h3>Order Online for PickUp</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu" id="menu">
+    <h1 class="heading">Our Menu <span>Popular Choices</span></h1>
+    <div class="box-container">
+        <a href="#" class="box">
+            <img src="./Image/boba1.jpeg" alt="">
+            <div class="content">
+                <h3>Brown Sugar Pearl Tea</h3>
+                <p>Rich black tea with creamy milk and sweet brown sugar pearls.</p>
+                <span>$7.24</span>
+            </div>
+        </a>
+        <a href="#" class="box">
+            <img src="./Image/boba2.jpeg" alt="">
+            <div class="content">
+                <h3>Pearl Classic</h3>
+                <p>Classic bubble tea with high-quality black tea and chewy pearls.</p>
+                <span>$6.11</span>
+            </div>
+        </a>
+        <!-- Repeat similar blocks for more menu items -->
+    </div>
+</section>
+<section class="reviews" id="reviews">
+    <h1 class="heading">Reviews <span>What People Say</span></h1>
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-right"></i>
+                <img src="/image/pic-1.png" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Great Place for fresh boba tea and refresher.</p>
+                <h3>John Doe</h3>
+                <span>Happy Customer</span>
+            </div>
+            <!-- Repeat similar blocks for more reviews -->
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<section class="booking" id="booking">
+    <h1 class="heading">Booking <span>Reserve a Table</span></h1>
+    <form action="">
+        <input type="text" placeholder="Name" class="box">
+        <input type="email" placeholder="Email" class="box">
+        <input type="number" placeholder="Phone" class="box">
+        <textarea name="" placeholder="Message" class="box" cols="30" rows="10"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+<footer class="footer">
+    <div class="box-container">
+        
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="./index.html"><i class="fas fa-arrow-right"></i> Home</a>
+            <a href="./about.html"><i class="fas fa-arrow-right"></i> About</a>
+            <a href="./menu.html"><i class="fas fa-arrow-right"></i> Menu</a>
+            <a href="#reviews"><i class="fas fa-arrow-right"></i> Reviews</a>
+            <a href="#booking"><i class="fas fa-arrow-right"></i> Booking</a>
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+            <a href="#"><i class="fas fa-phone"></i> +111-222-3333</a>
+            <a href="#"><i class="fas fa-envelope"></i> javabean@gmail.com</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Detroit, Michigan</a>
+        </div>
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+    <div class="credit">Created by <span>Amdadul</span> | All rights reserved</div>
+</footer>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

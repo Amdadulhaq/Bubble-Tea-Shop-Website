@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Tea Cart</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div id="menu-icon" class="fas fa-bars"></div>
+        <a href="./index.html" class="logo">Pearl Tea<i class="fas fa-coffee"></i></a>
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./login.html">Login/SignUp</a>
+        </nav>
+        <a href="./cart.html" class="btn" id="cart">Cart <span id="cart-count">0</span></a>
+    </header>
+    <section id="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </div>
+        <div id="cart-total">
+            <!-- Cart total will be displayed here -->
+        </div>
+        <button id="order-now" class="btn">Order Now</button>
+    </section>
+    <script src="./js/cart.js"></script>
+</body>
+</html>

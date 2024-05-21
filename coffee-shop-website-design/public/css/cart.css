@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --main-color: #443;
+    --border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
+    --border: .2rem solid var(--main-color);
+    --border-hover: .2rem dashed var(--main-color);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+
+
+
+/* General styling for the cart page */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: capitalize;
+    transition: color 0.3s;
+}
+
+.header .navbar a:hover {
+    color: #ff4b2b;
+}
+
+.header .btn {
+    background: #ff4b2b;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+}
+
+.header .btn:hover {
+    background: #ff2b1a;
+}
+
+.header .btn #cart-count {
+    background-color: #ff4b2b;
+    border-radius: 50%;
+    padding: 2px 8px;
+    color: white;
+    margin-left: 5px;
+    font-size: 1.2rem;
+}
+
+#cart-section {
+    padding: 20px;
+    margin-top: 80px; /* Adjust for fixed header */
+    background-color: #fff;
+    max-width: 800px;
+    margin: 80px auto 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#cart-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+#cart-items .cart-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-items .cart-item p {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+#cart-items .cart-item span {
+    margin-left: 10px;
+    font-size: 1.4rem;
+    color: #666;
+}
+
+#cart-items .cart-item .remove-from-cart {
+    padding: 5px 10px;
+    background-color: #ff4b2b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cart-items .cart-item .remove-from-cart:hover {
+    background-color: #ff2b1a;
+}
+
+#cart-total {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+}

@@ -1,0 +1,341 @@
+/* General styling for the main website */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    background-color: #fff;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background: #333;
+    color: #fff;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: capitalize;
+    transition: color 0.3s;
+}
+
+.header .navbar a:hover {
+    color: #ff4b2b;
+}
+
+.header .btn {
+    background: #ff4b2b;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+}
+
+.header .btn:hover {
+    background: #ff2b1a;
+}
+
+/* Menu section styling */
+.menu {
+    padding: 2rem 9%;
+    background: #f6f5f7;
+}
+
+.menu .heading {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.menu .heading span {
+    color: #ff4b2b;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.tab-button {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.tab-button.active,
+.tab-button:hover {
+    background: #ff4b2b;
+    color: #fff;
+}
+
+.menu-container {
+    display: none;
+}
+
+.menu-container.active {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.menu-item {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.menu-item p {
+    margin-bottom: 1rem;
+    color: #777;
+}
+
+.menu-item span {
+    display: block;
+    font-size: 1.8rem;
+    color: #ff4b2b;
+}
+
+/* Footer section styling */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem 9%;
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer .box {
+    flex: 1 1 30rem;
+}
+
+.footer .box h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer .box a {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .box a:hover {
+    color: #ff4b2b;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+/* General styling for the menu */
+.menu-container .menu-item {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-container .menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+/* General styling for the menu */
+.menu-container .menu-item {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s;
+}
+
+.menu-container .menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-container .menu-item .add-to-cart {
+    display: block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #ff4b2b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-container .menu-item .add-to-cart:hover {
+    background-color: #ff2b1a;
+}
+
+/* Styling for the cart section */
+#cart-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+#cart-items .cart-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-items .cart-item .remove-from-cart {
+    padding: 5px 10px;
+    background-color: #ff4b2b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cart-items .cart-item .remove-from-cart:hover {
+    background-color: #ff2b1a;
+}
+
+/* Styling for the cart total */
+#cart-total {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Add some styling for the cart count in the header */
+.header .btn #cart-count {
+    background-color: #ff4b2b;
+    border-radius: 50%;
+    padding: 2px 8px;
+    color: white;
+    margin-left: 5px;
+    font-size: 1.2rem;
+}
+
+
+
+
+/* General styling for the menu */
+.menu-container .menu-item {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s;
+}
+
+.menu-container .menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-container .menu-item .add-to-cart {
+    display: block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #ff4b2b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-container .menu-item .add-to-cart:hover {
+    background-color: #ff2b1a;
+}
+
+/* Styling for the cart section */
+#cart-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+#cart-items .cart-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-items .cart-item .remove-from-cart {
+    padding: 5px 10px;
+    background-color: #ff4b2b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cart-items .cart-item .remove-from-cart:hover {
+    background-color: #ff2b1a;
+}
+
+/* Styling for the cart total */
+#cart-total {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Add some styling for the cart count in the header */
+.header .btn #cart-count {
+    background-color: #ff4b2b;
+    border-radius: 50%;
+    padding: 2px 8px;
+    color: white;
+    margin-left: 5px;
+    font-size: 1.2rem;
+}

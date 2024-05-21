@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <header class="header">
+        <div id="menu-icon" class="fas fa-bars"></div>
+        <a href="./index.html" class="logo">Pearl Tea <i class="fas fa-coffee"></i></a>
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="./login.html">Login/SignUp</a>
+        </nav>
+        <a href="#" class="btn">Cart</a>
+    </header>
+    <div class="login-container">
+        <form class="login-form">
+            <h1>Login</h1>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+        </form>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+</html>

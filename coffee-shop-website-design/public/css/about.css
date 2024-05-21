@@ -1,0 +1,96 @@
+/* General styling for the main website */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background: #333;
+    color: #fff;
+    
+    
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: auto;
+}
+
+.header .navbar a {
+    margin: 0 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: capitalize;
+    transition: color 0.3s;
+    justify-content: flex-start;
+}
+
+
+.header .navbar a:hover {
+    color: #ff4b2b;
+}
+
+/* Button styling */
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff4b2b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background-color: #ff2b1a;
+}
+
+/* About section styling */
+
+.about {
+    padding: 20px;
+    margin-top: 80px; /* Adjust for fixed header */
+    max-width: 800px;
+    margin: 20px auto 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.about .content {
+    padding: 20px;
+}
+
+.about h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.about p {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+

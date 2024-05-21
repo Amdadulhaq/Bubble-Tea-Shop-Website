@@ -1,0 +1,110 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    padding: 2rem 5%; /* Adjust the padding to move the header content more to the left */
+    background: #333;
+    color: #fff;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: auto; /* Pushes the navbar to the right */
+}
+
+.header .navbar {
+    display: flex;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: capitalize;
+    transition: color 0.3s;
+}
+
+.header .navbar a:hover {
+    color: #ff4b2b;
+}
+
+.contact {
+    padding: 20px;
+    margin-top: 80px; /* Adjust for fixed header */
+    max-width: 800px;
+    margin: 80px auto 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact .content {
+    padding: 20px;
+}
+
+.contact h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.contact .form-group {
+    margin-bottom: 15px;
+}
+
+.contact .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact .btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff4b2b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact .btn:hover {
+    background-color: #ff2b1a;
+}
+
+.feedback {
+    text-align: center;
+    font-size: 1.6rem;
+    color: green;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}

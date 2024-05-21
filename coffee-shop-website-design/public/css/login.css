@@ -1,0 +1,142 @@
+/* General styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* This makes 1rem = 10px */
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1.6rem; /* This makes the base font size 16px */
+  background: #f6f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-top: 2rem; /* Add margin to create space between header and form */
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  transition: border 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #ff4b2b;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #ff4b2b;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff2b1a;
+}
+
+.message {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+}
+
+.message a {
+  color: #ff4b2b;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.message a:hover {
+  color: #ff2b1a;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 9%;
+  background: #333;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header .logo {
+  font-size: 2rem; /* Adjusted font size to match home page */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.4rem; /* Adjusted font size to match home page */
+  color: #fff;
+  text-transform: capitalize;
+  transition: color 0.3s;
+}
+
+.header .navbar a:hover {
+  color: #ff4b2b;
+}
+
+.header .btn {
+  background: #ff4b2b;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+
+.header .btn:hover {
+  background: #ff2b1a;
+}
+
+
